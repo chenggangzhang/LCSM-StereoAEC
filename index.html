@@ -1,0 +1,256 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>LCSM for End-to-end Acoustic Echo Cancellation</title>
+    <link rel="stylesheet" type="text/css" href="./stylesheets/github-light.css">
+</head>
+
+<body>
+    <article>
+        <header>
+            <h1>Audio Samples from "LCSM: A Lightweight Complex Spectral Mapping Framework for Stereophonic Acoustic Echo Cancellation"</h1>
+        </header>
+    </article>
+
+    <div><b>Authors:</b> Chenggang Zhang, Jinjiang Liu and Xueliang Zhang
+    </div>
+
+    <hr style="height:1px;border:none;border-top:1px solid #555555; width:100%">
+<!--     <h2>Part1: Blind test by Interspeech AEC-challenge 2021</h2>	
+    <hr style="height:1px;border:none;border-top:1px solid #555555; width:100%"> -->
+    <h2> Near-end is music signal, while far-end is speech signal scenario in Dual-Channel Dual-Microphone (DCDM) AEC</h2>
+    <table class="tg" style="undefined;table-layout: fixed; width: 500px" border="1">
+        <colgroup>
+            <col style="width: 150px">
+            <col style="width: 305px">
+            <col style="width: 305px">
+            <col style="width: 305px">
+            <col style="width: 305px">			
+        </colgroup>
+        <thead>
+            <tr>
+                <th class="tg-c3ow">Signals </th>
+                <th class="tg-c3ow">Sample 1</th>
+                <th class="tg-c3ow">Sample 2</th>
+                <th class="tg-c3ow">Sample 3</th>
+                <th class="tg-c3ow">Sample 4</th>				
+            </tr>
+        </thead>
+        <tbody>
+
+		    <tr>				
+
+				<td rowspan=3 class="tg-pcvp">Microphone signals. The top is first microphone, and the bottom is second microphone.</td>	
+				
+				<tr>				
+					<td class="tg-ihkz">
+						<img src="./images/pic/Mix-1.jpg" width="300" height="150">
+					</td>
+					<td class="tg-ihkz">
+						<img src="./images/pic/Mix-2.jpg" width="300" height="150">
+					</td>
+					<td class="tg-ihkz">
+						<img src="./images/pic/Mix-3.jpg" width="300" height="150">
+					</td>
+					<td class="tg-ihkz">
+						<img src="./images/pic/Mix-4.jpg" width="300" height="150">
+					</td>				
+				</tr>
+				
+				<tr>
+				<td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/microphone/music-fma-0002-n-SER-0_mix.wav">
+                    </audio></td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/microphone/music-fma-0009-n-SER-0_mix.wav">
+                    </audio></td>                
+				<td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/microphone/music-fma-0025-n-SER-0_mix.wav">
+                    </audio></td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/microphone/music-fma-0030-n-SER-0_mix.wav">
+                    </audio></td>  
+				
+				</tr>	
+            </tr>
+			
+            <tr>
+                <td rowspan=3 class="tg-pcvp">Target signals</td>
+				
+				<tr>				
+					<td class="tg-ihkz">
+						<img src="./images/pic/Ideal-1.jpg" width="300" height="150">
+					</td>
+					<td class="tg-ihkz">
+						<img src="./images/pic/Ideal-2.jpg" width="300" height="150">
+					</td>
+					<td class="tg-ihkz">
+						<img src="./images/pic/Ideal-3.jpg" width="300" height="150">
+					</td>
+					<td class="tg-ihkz">
+						<img src="./images/pic/Ideal-4.jpg" width="300" height="150">
+					</td>				
+				</tr>
+				
+				<tr>
+				
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/microphone/music-fma-0002-n-SER-0_ideal.wav">
+                    </audio></td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/microphone/music-fma-0009-n-SER-0_ideal.wav">
+                    </audio></td>                
+				<td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/microphone/music-fma-0025-n-SER-0_ideal.wav">
+                    </audio></td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/microphone/music-fma-0030-n-SER-0_ideal.wav">
+                    </audio></td>  
+				</tr>
+            </tr>			
+			 
+			<tr>				
+
+				<td rowspan=3 class="tg-pcvp">  Cheng et al.[1] </td>	
+				
+				<tr>				
+					<td class="tg-ihkz">
+						<img src="./images/pic/CLJ-1.jpg" width="300" height="150">
+					</td>
+					<td class="tg-ihkz">
+						<img src="./images/pic/CLJ-2.jpg" width="300" height="150">
+					</td>
+					<td class="tg-ihkz">
+						<img src="./images/pic/CLJ-3.jpg" width="300" height="150">
+					</td>
+					<td class="tg-ihkz">
+						<img src="./images/pic/CLJ-4.jpg" width="300" height="150">
+					</td>				
+				</tr>
+				
+				<tr>
+				<td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/clj/music-fma-0002-n-SER-0_es.wav">
+                    </audio></td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/clj/music-fma-0009-n-SER-0_es.wav">
+                    </audio></td>                
+				<td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/clj/music-fma-0025-n-SER-0_es.wav">
+                    </audio></td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/clj/music-fma-0030-n-SER-0_es.wav">
+                    </audio>
+				</td>  		
+				</tr>				
+            </tr>
+			
+			
+			<tr>				
+
+				<td rowspan=3 class="tg-pcvp">  Zhang[2]</td>	
+				
+				<tr>				
+					<td class="tg-ihkz">
+						<img src="./images/pic/ZH-1.jpg" width="300" height="150">
+					</td>
+					<td class="tg-ihkz">
+						<img src="./images/pic/ZH-2.jpg" width="300" height="150">
+					</td>
+					<td class="tg-ihkz">
+						<img src="./images/pic/ZH-3.jpg" width="300" height="150">
+					</td>
+					<td class="tg-ihkz">
+						<img src="./images/pic/ZH-4.jpg" width="300" height="150">
+					</td>				
+				</tr>
+				
+				<tr>
+				<td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/zh/music-fma-0002-n-SER-0_es.wav">
+                    </audio></td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/zh/music-fma-0009-n-SER-0_es.wav">
+                    </audio></td>                
+				<td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/zh/music-fma-0025-n-SER-0_es.wav">
+                    </audio></td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/zh/music-fma-0030-n-SER-0_es.wav">
+                    </audio>
+					</td>			
+				</tr>				
+            </tr>
+			
+			<tr>				
+
+				<td rowspan=3 class="tg-pcvp">  LCSM </td>	
+				
+				<tr>				
+					<td class="tg-ihkz">
+						<img src="./images/pic/LCSM-1.jpg" width="300" height="150">
+					</td>
+					<td class="tg-ihkz">
+						<img src="./images/pic/LCSM-2.jpg" width="300" height="150">
+					</td>
+					<td class="tg-ihkz">
+						<img src="./images/pic/LCSM-3.jpg" width="300" height="150">
+					</td>
+					<td class="tg-ihkz">
+						<img src="./images/pic/LCSM-4.jpg" width="300" height="150">
+					</td>				
+				</tr>
+				
+				<tr>
+				<td class="tg-ihkz"><audio controls="">
+                     <source
+                            src="./samples/microphone/music-fma-0002-n-SER-0_es.wav">
+                    </audio></td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/microphone/music-fma-0009-n-SER-0_es.wav">
+                    </audio></td>                
+				<td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/microphone/music-fma-0025-n-SER-0_es.wav">
+                    </audio></td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/microphone/music-fma-0030-n-SER-0_es.wav">
+                    </audio>
+					</td>  		
+				</tr>				
+            </tr>
+
+        </tbody>
+
+    </table>
+	    <hr style="height:1px;border:none;border-top:1px solid #555555; width:100%">
+		<tbody>
+			<tr>
+			 [1]Linjuan, Cheng, et al. "Deep learning-based stereophonic acoustic echo suppression without decorrelation." The Journal of the Acoustical Society of America 150.2 (2021): 816-829.
+			 <br/>
+			 [2]Hao, Zhang, and DeLiang Wang. "A Deep Learning Approach to Multi-Channel and Multi-Microphone Acoustic Echo Cancellation." Proc. Interspeech 2021 (2021): 1139-1143.
+			 <br/>
+			 <br/>
+			 <br/>
+			 </tr>
+		</tbody>
