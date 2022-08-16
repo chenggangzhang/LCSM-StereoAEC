@@ -1,7 +1,7 @@
 # LCSM-StereoAEC
 
-Audio Samples from paper "LCSM: A Lightweight Complex Spectral Mapping Framework for Stereophonic Acoustic Echo Cancellation
+Audio Samples from paper ["LCSM: A Lightweight Complex Spectral Mapping Framework for Stereophonic Acoustic Echo Cancellation"](https://arxiv.org/abs/2208.07277)
 
-Accepted by Interspeech 2022.
+Accepted to Interspeech 2022.
 
-Link: https://chenggangzhang.github.io/LCSM-StereoAEC/
+Demo Link: https://chenggangzhang.github.io/LCSM-StereoAEC/
